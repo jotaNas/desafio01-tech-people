@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Inciativa do server Tech People" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+      media="all"
+    />
+
+    <title>Desafio Front-end 01</title>
+  </head>
+  <body>
+    <header>
+      <section class="nav">
+        <div class="logo">MeuFreela</div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/feed/" target="blank"
+            ><img src="./img/linkedin.svg" alt="link para o linkedin"
+          /></a>
+          <a href="https://www.instagram.com/" target="blank"
+            ><img src="./img/instagram.svg" alt="link para o instagram"
+          /></a>
+          <a href="https://twitter.com/home" target="blank">
+            <img src="./img/twitter.svg" alt="link para o twitter"
+          /></a>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </section>
+
+      <section class="hero">
+        <h3>Desenvolvedores prontos para a ação</h3>
+        <h1>
+          Seu projeto pronto <br />
+          na velocidade da luz
+        </h1>
+        <a href="#contact" alt="âncora para o formulário">Peça uma reunião</a>
+      </section>
+    </header>
+    <main>
+      <section class="mission">
+        <div class="text" data-anime="left">
+          <h2>Nossa iniciativa</h2>
+          <p>
+            Somos desenvolvedores que se dedicam a fazer projetos perfeitos e
+            entregar calor para todos os clientes. Gostamos de ver clientes
+            satisfeitos com projetos feitos com carinho, atenção e qualidade
+            altíssima.
+          </p>
+        </div>
+        <div class="img-man" data-anime="right">
+          <img
+            src="./img/thinking-man.webp"
+            alt="Um honem com a mão no queixo."
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+    <section id="contact" data-anime="left" class="">
+      <h2>Mande um oi, ligamos para você</h2>
+      <p>Preencha seus dados para que a gente possa entrar em contato.</p>
+      <form action="submit" method="post">
+        <div class="inputs">
+          <label for="nome"
+            >Nome Completo
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              caption
+              pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+              title="Insira nome e sobrenome"
+              required
+              placeholder="Mateus Ávila"
+          /></label>
+          <label for="fone"
+            >Whatsapp
+            <input
+              type="tel"
+              name="fone"
+              id="fone"
+              pattern="\([0-9]{2}\) [0-9]{4}-[0-9]{4}$"
+              maxlength="15"
+              required="required"
+              title="Insira o número com o formato (99) 9999-9999"
+              placeholder="(99) 9999-9999"
+          /></label>
+          <label for="btn">
+            <input type="submit" name="btn" id="btn" />
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>Desafio 1 - Front-end iniciante</p>
+      <p>Iniciativa <strong>Tech People</strong></p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
